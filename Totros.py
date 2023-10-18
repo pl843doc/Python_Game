@@ -238,7 +238,7 @@ def main():
     if index == 0: #タイトルロゴ
         cv.delete("all")
         cv.create_image(300,300, image=img)
-        draw_txt("T○TR○S", 300, 200, 50, "red", "TITLE")
+        draw_txt("TOTROS", 300, 200, 50, "red", "TITLE")
         draw_txt("Click to start.", 300, 350, 25, "green", "TITLE")
         index = 1
         mouse_c = 0
@@ -276,7 +276,7 @@ def main():
         under.drop_mino()
     win.after(100,main)
 win = Tk()     #ウィンドウの作成
-win.title("T○TR○S")
+win.title("TOTROS")
 win.resizable(False, False)
 win.bind("<Motion>", mouse_move)
 win.bind("<ButtonPress>", mouse_press)
